@@ -22,37 +22,14 @@ This subset is redistributed under the same terms. The PDDL places the data in t
 
 This repository is not affiliated with, reviewed by, or endorsed by the Genomes to Fields Initiative or CyVerse.
 
-### What was changed from the original
-
-The subset was made from the files `b._2023_weather_data/g2f_2023_weather_cleaned.csv`, `z._2023_supplemental_info/g2f_2023_field_metadata.csv`, and `a._2023_phenotypic_data/g2f_2023_phenotypic_clean_data.csv` in the original release. Changes:
-
-1. **Rows:** kept only the five sites listed below. All rows for those sites are kept, in their original order.
-2. **Columns:** removed four columns that are entirely empty for these five sites (`NWS Network`, `NWS Station`, `Soil EC [mS/cm]`, `UV Light [uM/m2s]`). Remaining column names and values are unchanged.
-3. **`sites.csv`** is a new summary table assembled from the field metadata (city, weather station coordinates, irrigation) and the phenotype file (state; the most common planting and harvest date across plots at each site). Column names were shortened.
-4. **`data/source_docs/`** contains two unmodified files from the original release: the weather data description (PDF) and the weather cleaning readme.
-
-No values were corrected, imputed, or re-checked. The weather values are exactly as published in the G2F "cleaned" file; the G2F cleaning steps are described in `data/source_docs/g2f_2023_weather_readMe.txt`.
-
 ## Files
 
 | File | Contents |
 |---|---|
 | `data/g2f_2023_weather_5sites.csv` | Sub-daily weather station readings (35,190 rows, 18 columns) |
 | `data/sites.csv` | One row per site: location, station coordinates, irrigation, planting and harvest dates |
-| `data/source_docs/` | Original G2F documentation for the weather data |
+| `data/source_docs/` | Original G2F documentation, including column definitions for the weather data |
 
 ## Sites
 
-| Site | City | State | Logging interval |
-|---|---|---|---|
-| TXH1 | College Station | TX | 30 min |
-| MOH1 | Columbia | MO | 30 min |
-| NEH1 | Lincoln | NE | 15 min |
-| MNH1 | Waseca | MN | 60 min |
-| NYH2 | Aurora | NY | 60 min |
-
-The original G2F trials at these sites are maize hybrid trials. Weather station coordinates are missing for MNH1 in the source metadata.
-
-## Weather columns
-
-Column definitions are in `data/source_docs/g2f_2023_weather_data_description.pdf`. In brief: site code (`Field Location`), station ID, timestamp (`Date_key`, plus separate `Month`, `Day`, `Year`, `Time`), air temperature, dew point, relative humidity, solar radiation, rainfall, wind speed, direction and gust, soil temperature, soil moisture, and PAR. Units are in the column names.
+The original G2F trials at these sites are maize hybrid trials. Logging intervals differ by site: 15 min (NEH1), 30 min (TXH1, MOH1), 60 min (MNH1, NYH2).
