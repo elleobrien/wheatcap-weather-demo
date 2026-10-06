@@ -1,0 +1,6 @@
+site,city,state,station_lat,station_lon,irrigated,date_planted,date_harvested
+TXH1,College Station,TX,30.55068715,-96.43013246,yes,3/1/2023,7/26/2023
+MOH1,Columbia,MO,38.8965374,-92.2107058,no,5/24/2023,11/7/2023
+NEH1,Lincoln,NE,40.860567,-96.59617,no,5/16/2023,10/23/2023
+MNH1,Waseca,MN,,,no,5/22/2023,11/7/2023
+NYH2,Aurora,NY,42.733981,-76.656534,no,5/12/2023,11/10/2023
