@@ -1,6 +1,6 @@
 # WheatCAP weather demo data
 
-A small subset of in-field weather station data from five U.S. field sites in 2023, prepared for live demonstrations in the WheatCAP short course *Generative AI Agents for R* (Elle O'Brien, University of Michigan School of Information, November 2026).
+A small subset of in-field weather station data from five U.S. field sites in 2023, prepared for live demonstrations in the WheatCAP short course *Generative AI Agents* (Elle O'Brien, University of Michigan School of Information, November 2026).
 
 ## Data source and attribution
 
