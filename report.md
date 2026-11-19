@@ -39,16 +39,13 @@ misleading, so they were left out (MNH1: 3, MOH1: 2, NEH1: 1, TXH1: 1).
 
 ## Rainfall
 
-| Site | First day  | Last day   | Days | Total (mm) | Per day (mm) | Rainy days |
-|:-----|:-----------|:-----------|-----:|-----------:|-------------:|-----------:|
-| NEH1 | 2023-06-02 | 2023-10-10 |  131 |      463.6 |          3.5 |         44 |
-| MOH1 | 2023-05-24 | 2023-11-08 |  169 |      465.3 |          2.8 |         54 |
-| NYH2 | 2023-05-11 | 2023-11-15 |  189 |      511.0 |          2.7 |         68 |
-| MNH1 | 2023-05-01 | 2023-12-01 |  215 |      433.6 |          2.0 |         56 |
-| TXH1 | 2023-05-21 | 2023-08-31 |  103 |       69.1 |          0.7 |         11 |
-
-*Days*: days with any rainfall record. *Rainy days*: days with more than
-0.25 mm.
+| Site | First day | Last day | Days with data | Total (mm) | Mean per day (mm) | Rainy days (\>0.25 mm) |
+|:---|:---|:---|---:|---:|---:|---:|
+| NEH1 | 2023-06-02 | 2023-10-10 | 131 | 463.6 | 3.5 | 44 |
+| MOH1 | 2023-05-24 | 2023-11-08 | 169 | 465.3 | 2.8 | 54 |
+| NYH2 | 2023-05-11 | 2023-11-15 | 189 | 511.0 | 2.7 | 68 |
+| MNH1 | 2023-05-01 | 2023-12-01 | 215 | 433.6 | 2.0 | 56 |
+| TXH1 | 2023-05-21 | 2023-08-31 | 103 | 69.1 | 0.7 | 11 |
 
 - **NEH1** had the highest average rainfall, 3.5 mm per day over 131
   days of records.

@@ -98,13 +98,11 @@ would be misleading, so they were left out
 rain_summary |>
   mutate(across(c(total_mm, mean_mm_per_day), \(x) round(x, 1))) |>
   select(Site = site, `First day` = first_day, `Last day` = last_day,
-         Days = days_with_data, `Total (mm)` = total_mm,
-         `Per day (mm)` = mean_mm_per_day, `Rainy days` = rainy_days) |>
+         `Days with data` = days_with_data, `Total (mm)` = total_mm,
+         `Mean per day (mm)` = mean_mm_per_day,
+         `Rainy days (>0.25 mm)` = rainy_days) |>
   kable()
 ```
-
-*Days*: days with any rainfall record. *Rainy days*: days with more than
-0.25 mm.
 
 - **`r wettest$site`** had the highest average rainfall,
   `r round(wettest$mean_mm_per_day, 1)` mm per day over
