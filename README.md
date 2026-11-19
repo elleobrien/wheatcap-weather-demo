@@ -30,16 +30,6 @@ This repository is not affiliated with, reviewed by, or endorsed by the Genomes 
 | `data/sites.csv` | One row per site: location, station coordinates, irrigation, planting and harvest dates |
 | `data/source_docs/` | Original G2F documentation, including column definitions for the weather data |
 
-## Report
-
-`report.md` summarises the findings of the scripts in `scripts/`: data cleaning, rainfall and temperature by site, and both figures. It is generated from `report.qmd`, which runs each script and writes the results into the text and tables, so the numbers always match the current data and code. To rebuild it (and the figures) from the repository root:
-
-```bash
-quarto render report.qmd
-```
-
-Or open `report.qmd` in RStudio and click **Render**.
-
 ## Sites
 
 The original G2F trials at these sites are maize hybrid trials. Logging intervals differ by site: 15 min (NEH1), 30 min (TXH1, MOH1), 60 min (MNH1, NYH2).
